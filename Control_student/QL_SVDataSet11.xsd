@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QL_SVDataSet11" targetNamespace="http://tempuri.org/QL_SVDataSet11.xsd" xmlns:mstns="http://tempuri.org/QL_SVDataSet11.xsd" xmlns="http://tempuri.org/QL_SVDataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QL_SVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QL_SVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Control_student.Properties.Settings.GlobalReference.Default.QL_SVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KHOAVIENTableAdapter" GeneratorDataComponentClassName="KHOAVIENTableAdapter" Name="KHOAVIEN" UserDataComponentName="KHOAVIENTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QL_SVConnectionString (Settings)" DbObjectName="QL_SV.dbo.KHOAVIEN" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenKhoa FROM dbo.KHOAVIEN</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenKhoa" DataSetColumn="TenKhoa" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QL_SVDataSet11" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QL_SVDataSet11" msprop:Generator_UserDSName="QL_SVDataSet11">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KHOAVIEN" msprop:Generator_TableClassName="KHOAVIENDataTable" msprop:Generator_TableVarName="tableKHOAVIEN" msprop:Generator_TablePropName="KHOAVIEN" msprop:Generator_RowDeletingName="KHOAVIENRowDeleting" msprop:Generator_RowChangingName="KHOAVIENRowChanging" msprop:Generator_RowEvHandlerName="KHOAVIENRowChangeEventHandler" msprop:Generator_RowDeletedName="KHOAVIENRowDeleted" msprop:Generator_UserTableName="KHOAVIEN" msprop:Generator_RowChangedName="KHOAVIENRowChanged" msprop:Generator_RowEvArgName="KHOAVIENRowChangeEvent" msprop:Generator_RowClassName="KHOAVIENRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenKhoa" msprop:Generator_ColumnVarNameInTable="columnTenKhoa" msprop:Generator_ColumnPropNameInRow="TenKhoa" msprop:Generator_ColumnPropNameInTable="TenKhoaColumn" msprop:Generator_UserColumnName="TenKhoa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
